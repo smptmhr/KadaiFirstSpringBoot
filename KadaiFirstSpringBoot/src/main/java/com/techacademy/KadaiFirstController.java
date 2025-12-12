@@ -22,30 +22,4 @@ public class KadaiFirstController {
 
         return dayOfWeek;
     }
-    
-    @GetMapping("/plus/{val1}/{val2}")
-    public String calcPlus(@PathVariable int val1, @PathVariable int val2) {
-        var res = val1 + val2;
-        return "実行結果: " + res;
-    }
-    
-    @GetMapping("/minus/{val1}/{val2}")
-    public String calcMinus(@PathVariable int val1, @PathVariable int val2) {
-        var res = val1 - val2;
-        return "実行結果: " + res;
-    }
-    
-    @GetMapping("/times/{val1}/{val2}")
-    public String calcTimes(@PathVariable int val1, @PathVariable int val2) {
-        var res = val1 * val2;
-        return "実行結果: " + res;
-    }
-    
-    @GetMapping("/devide/{val1}/{val2}")
-    public String calcDevide(@PathVariable int val1, @PathVariable int val2) {
-        if (val2 == 0) return "エラー: 0では割れません";
-        
-        var res = val1 / val2;
-        return "実行結果: " + res;
-    }
 }
