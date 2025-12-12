@@ -25,6 +25,6 @@ public class KadaiFirstController {
         
         String dayOfWeek = date.getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.ENGLISH);
 
-        return "param : " + dayOfWeek;
+        return dayOfWeek;
     }
 }
