@@ -11,11 +11,6 @@ import java.util.Locale;
 
 @RestController
 public class KadaiFirstController {
-
-    @GetMapping("/")
-    public String index() {
-        return "index";
-    }
     
     @GetMapping("/dayofweek/{yyyymmdd}")
     public String dispDayOfWeek(@PathVariable String yyyymmdd) {
